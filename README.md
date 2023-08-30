@@ -27,7 +27,3 @@ Include any relevant screenshots or images of your website here.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to customize this `README.md` file with more specific information about your project, its goals, and any additional features or details that you'd like to highlight. Good luck with your personal website project!
