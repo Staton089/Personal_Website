@@ -1,107 +1,162 @@
-/* Reset default margin, padding, and font-family for all elements */
+/* General Styles */
 * {
-  margin: 0;
-  padding: 0;
-  font-family: "Quicksand", "Montserrat", "Lato", sans-serif;
+  margin: 0; /* Sets margin of all elements to zero */
+  padding: 0; /* Sets padding of all elements to zero */
+  border-box: ; /* There seems to be an issue with 'border-box' value here */
 }
 
-/* Define color variables */
-:root {
-  --dark-blue: #27374d;
-  --medium-blue: #526d82;
-  --light-blue: #9db2bf;
-  --background: #dde6ed;
+body {
+  font-family: "Playfair Display", serif; /* Sets the font for the body text */
+  margin: 0; /* Resets margin for the body */
+  padding: 0; /* Resets padding for the body */
 }
 
-/* Style the navigation */
-nav {
-  background-color: var(
-    --dark-blue
-  ); /* Set the background color of the navigation bar using the defined dark blue variable */
-  display: flex; /* Use flexbox to arrange navigation items */
-  justify-content: space-between; /* Distribute space evenly between navigation items */
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif; /* Sets the font for headings */
 }
 
-/* Style the navigation title */
-nav h1 {
-  margin: 0 15px;
-  padding: 10px 0;
-  color: white;
-  font-size: 18px;
+p,
+a,
+ul,
+li {
+  font-family: "Open Sans", sans-serif; /* Sets the font for paragraphs, links, and lists */
 }
 
-/* Style the navigation links */
-nav ul {
-  list-style: none; /* Remove default list styles for the navigation links */
-  display: flex; /* Use flexbox to arrange navigation links */
-  justify-content: center; /* Center align the navigation links horizontally */
-  padding: 10px 0; /* Add padding above and below the navigation links */
+
+.logo {
+  font-family: "Avenir Next", "Segoe UI", "Roboto", sans-serif; /* Font for the .logo class */
+  font-size: 16px; /* Sets the font size for elements with .logo class */
 }
 
-nav li {
-  margin: 0 15px;
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-}
-
-/* Style sections */
-section {
-  padding: 50px;
-  text-align: center;
-}
-
-/* Style the header */
+/* Header Section */
 header {
-  background-color: var(--medium-blue);
-  padding: 10px 0;
+  display: flex; /* Uses flexbox for header layout */
+  justify-content: space-between; /* Aligns header content to each side */
+  background-color: #333; /* Sets the header background color */
+  color: #fff; /* Sets the text color */
+  padding: 15px; /* Provides padding inside the header */
+  align-items: center; /* Aligns items vertically */
 }
 
-/* Style the footer */
+/* Navigation Styles */
+nav ul {
+  list-style: none; /* Removes the default list styles */
+  padding: 0; /* Resets padding for navigation ul */
+}
+nav ul li {
+  display: inline; /* Sets list items inline */
+  margin-right: 20px; /* Provides space between list items */
+}
+
+nav ul li a {
+  text-decoration: none; /* Removes underline from links */
+  color: #fff; /* Sets link color to white */
+}
+
+/* Main Content Section */
+main {
+  padding: 20px; /* Provides padding for the main content */
+}
+
+/* Individual Section Styles */
+section {
+  margin-bottom: 30px; /* Provides bottom margin for all sections */
+}
+
+#home {
+  display: flex; /* Uses flexbox for layout */
+  flex-direction: column; /* Aligns content evenly within the sections */
+  align-items: center;
+}
+
+
+#about {
+  display: flex; /* Uses flexbox for layout */
+  justify-content: space-evenly; /* Aligns content evenly within the sections */
+}
+#about h2 {
+  margin-top: 50px;
+}
+
+#about-content {
+  width: 30%;
+}
+
+#contact {
+  display: flex; /* Uses flexbox for layout */
+  justify-content: space-evenly; /* Aligns content evenly within the sections */
+}
+#contact h2 {
+  margin-top: 150px;
+}
+
+/* Contact Form Styles */
+form {
+  width: 30%; /* Sets the form width */
+  background-color: #fff; /* Sets form background color */
+  padding: 20px; /* Adds padding inside the form */
+  border-radius: 8px; /* Rounds form corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a box shadow to the form */
+}
+
+/* Label and Input Styles */
+label {
+  display: block; /* Displays labels as blocks */
+  margin: 10px 0; /* Sets margin for labels */
+  font-weight: bold; /* Makes label text bold */
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: calc(100% - 20px); /* Sets width for input fields and textarea */
+  padding: 8px; /* Adds padding inside input fields and textarea */
+  margin-bottom: 15px; /* Provides bottom margin for input fields */
+  border: 1px solid #ccc; /* Sets border for input fields */
+  border-radius: 4px; /* Rounds input field corners */
+}
+
+textarea {
+  height: 100px; /* Sets height for the textarea */
+}
+
+/* Submit Button Styles */
+input[type="submit"] {
+  background-color: #007bff; /* Sets submit button background color */
+  color: #fff; /* Sets submit button text color */
+  border: none; /* Removes button border */
+  padding: 10px 20px; /* Adds padding to the button */
+  border-radius: 4px; /* Rounds button corners */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3; /* Changes background color on hover */
+}
+
+
+/* Footer Styles */
 footer {
-  background-color: var(--dark-blue);
-  color: white;
-  text-align: center;
-  padding: 10px 0;
+  background-color: #aaa; /* Sets the footer background color */
+  display: flex; /* Uses flexbox for layout */
+  color: #000; /* Sets text color */
+  justify-content: space-evenly; /* Aligns content evenly */
+  align-items: center; /* Aligns items vertically */
 }
 
-/* Style the projects */
-.project {
-  margin: 20px 0;
-  padding: 15px;
-  border: 1px solid var(--light-blue);
-  border-radius: 5px;
+footer a {
+  text-decoration: none; /* Removes underline from footer links */
+  color: #000; /* Sets link color to black */
+  padding: 5px 10px; /* Adds padding to links */
+  border: 1px solid #000; /* Adds a border to links */
+  border-radius: 5px; /* Rounds link corners */
 }
 
-/* Style the buttons within projects */
-.project button {
-  background-color: var(
-    --dark-blue
-  ); /* Set the background color of the button */
-  color: white; /* Set the font color of the button text */
-  padding: 10px 20px; /* Add padding inside the button */
-  border: none; /* Remove border around the button */
-  border-radius: 5px; /* Apply rounded corners to the button */
-  cursor: pointer; /* Change the cursor to a pointer on hover */
-  font-size: 16px; /* Set the font size of the button text */
-  transition: background-color 0.3s, transform 0.2s; /* Add smooth transitions for background color and transform properties */
-  text-decoration: none; /* Remove underline from text */
-  display: inline-block; /* Display the button as an inline-block element */
-  margin-top: 10px; /* Add spacing above the button */
-}
-
-/* Style the link within buttons */
-.project button a {
-  color: white; /* Set font color for the link within the button */
-  text-decoration: none;
-}
-
-/* Add hover effect for buttons */
-.project button:hover {
-  background-color: var(
-    --medium-blue
-  ); /* Change the background color on hover */
-  transform: scale(1.05); /* Slightly scale up the button on hover */
+footer a:hover {
+  background-color: #000; /* Changes background color on link hover */
+  color: #fff; /* Changes link text color on hover */
 }
