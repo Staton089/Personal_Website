@@ -3,3 +3,12 @@
   margin: 0; /* Sets margin of all elements to zero */
   padding: 0; /* Sets padding of all elements to zero */
 }
+.nav-container{
+  border: 1px black solid;
+  display: flex;
+
+}
+
+ul{
+  display: flex;
+}
