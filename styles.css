@@ -3,12 +3,50 @@
   margin: 0; /* Sets margin of all elements to zero */
   padding: 0; /* Sets padding of all elements to zero */
 }
+.home-container{
+  text-align: center;
+  margin: 2em;
+}
 .nav-container{
   border: 1px black solid;
   display: flex;
+  justify-content: space-between;
 
 }
 
+.about-container{
+  border: 3px solid rgb(197, 14, 14);
+  display: flex;
+  
+
+}
+
+.about-me-container{
+  border: 6px solid black;
+  width: 40%;
+  text-align: center;
+  margin: auto; /* This centers the container horizontally */
+}
+.about-paragraph-container{
+  border: 1px solid blue;
+  width: 80%;
+  height: 40rem;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center (optional) */
+}
+.paragraph-content{
+  border: 3px solid rgb(66, 197, 14);
+  width:80%;
+  height: 30rem;
+  text-align: center;
+  
+}
 ul{
   display: flex;
+  list-style: none;
+}
+
+ul li{
+  padding: 1em;
 }
